@@ -4,6 +4,6 @@ object pepita {
   method energy() = energy
 
   method fly(minutes) {
-    energy = energy - minutes * 3
+    energy = energy - minutes * 4
   }
 }
