@@ -1,0 +1,23 @@
+import BIcicleta.*
+
+
+describe "Test de BIcis" {
+  const biciOlmo28 = new Bicicleta(rodado =28, largo=150, marca ="Olmo",accesorios =[new Farolito()])
+  const biciOlmo26 = new Bicicleta(rodado =26, largo=110, marca ="Olmo",accesorios =[new Farolito(), new Canasto(volumen=8),new Morral(largo=21,tieneOjoDeGato=true)])
+  const biciLegnano20 = new Bicicleta(rodado =26, largo=110, marca ="Olmo",accesorios =[new Farolito(), new Canasto(volumen=8),new Morral(largo=21,tieneOjoDeGato=true)])
+test "biciOlmo28 tiene altura 85"{
+  assert.equals(85,biciOlmo28.altura())
+}
+
+test "biciOlmo28 tiene carga 0"{
+  assert.equals(0,biciOlmo28.carga())
+}
+
+test "biciOlmo28 tiene Luz" {
+  assert.that(biciOlmo28.tieneLuz())
+}
+
+test "biciOlmo28 tiene un accesorio liviano" {
+  
+}
+}
